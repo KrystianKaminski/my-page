@@ -57,25 +57,24 @@ body {
     background-size: cover;
     color: #eee;
     text-align: center;
-    opacity: 0.8;
 }
 
 .section-hero__header {
     font-size: 35px;
     text-transform: uppercase;
-    transform: translateY(-150px);
-    text-shadow: 5px 5px 10px #000;
+    transform: translateY(-45px);
     letter-spacing: 5px;
 }
 
 .section-hero__sub-header {
     font-size: 15px;
-    transform: translateY(-90px);
-    text-shadow: 5px 5px 10px #000;
+    transform: translateY(0);
     letter-spacing: 5px;
 }
 
+
 .section-hero__button {
+    transform: translateY(30px);
     text-decoration: none;
     height: 50px;
     width: 150px;
@@ -111,12 +110,12 @@ body {
     text-align: center;
     margin: 20px;
     font-size: 35px;
-    text-shadow: 5px 5px 10px #000;
     color: #f7f1e3;
     text-transform: uppercase;
 }
 
 .section-about-me__description {
+    text-align: justify;
     order: 1;
     color: #f7f1e3;
 }
@@ -146,7 +145,6 @@ body {
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 5px;
-    text-shadow: 2px 2px 2px #000;
 }
 
 .section-technologies__html,
@@ -205,6 +203,12 @@ body {
 /* For mobile */
 
 @media (min-width: 768px) {
+    .menu {
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+
     .menu__list {
         flex-direction: row;
     }
@@ -228,14 +232,18 @@ body {
         justify-content: space-between;
     }
 
+    .section-about-me__title {
+        font-size: 50px;
+    }
+
     .section-about-me__description {
         flex-basis: 70%;
         order: -1;
     }
 
     .section-about-me__photo-box {
-        height: 40vh;
-        width: 40vh;
+        max-height: 40vh;
+        max-width: 40vh;
     }
 
     .section-technologies__container {
