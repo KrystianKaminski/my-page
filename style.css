@@ -146,9 +146,7 @@ body {
   letter-spacing: 5px;
 }
 
-.section-technologies__html,
-.section-technologies__css,
-.section-technologies__js {
+.section-technologies__technology {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -156,9 +154,7 @@ body {
   justify-content: center;
 }
 
-.section-technologies__html__box,
-.section-technologies__css__box,
-.section-technologies__js__box {
+.section-technologies__technology__box {
   padding: 30px;
   max-height: 30vh;
   max-width: 30vh;
@@ -166,17 +162,13 @@ body {
   min-width: 30vh;
 }
 
-.section-technologies__html__box__photo,
-.section-technologies__css__box__photo,
-.section-technologies__js__box__photo {
+.section-technologies__technology__box__photo {
   max-width: 100%;
   display: block;
   margin: 0 auto;
 }
 
-.section-technologies__html__description,
-.section-technologies__css__description,
-.section-technologies__js__description {
+.section-technologies__technology__description {
   padding: 30px;
   color: #f7f1e3;
 }
@@ -245,7 +237,7 @@ body {
     max-width: 40vh;
   }
 
-  .section-technologies__container {
+  .section-technologies__row-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,9 +245,7 @@ body {
     margin: 0 auto;
   }
 
-  .section-technologies__html,
-  .section-technologies__css,
-  .section-technologies__js {
+  .section-technologies__technology {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
